@@ -6,7 +6,7 @@ use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation;
 
 /**
- * Provides route responses for the Example module.
+ * Provides route responses for the custom module.
  */
 class Showinfo extends ControllerBase {
 
