@@ -1,0 +1,5 @@
+name: Get info
+description: Get information about client browser, ip, host.
+core: 8.x
+package: Custom
+type: module

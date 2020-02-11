@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function client_info_theme($existing, $type, $theme, $path) {
+  return [ 
+    'client_info' => [
+      'variables' => [
+	    'ip' => NULL,
+	    'host' => NULL,
+	    'browser_name' => NULL,
+      ]
+    ] 
+  ];
+}

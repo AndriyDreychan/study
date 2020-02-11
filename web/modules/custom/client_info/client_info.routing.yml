@@ -1,0 +1,7 @@
+client_info.get_data:
+  path: '/show-info'
+  defaults:
+    _controller: '\Drupal\client_info\Controller\Showinfo::client_info'
+    _title: 'Information:'
+  requirements:
+    _permission: 'access content'
