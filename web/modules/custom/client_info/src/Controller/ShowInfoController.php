@@ -14,8 +14,10 @@ class ShowInfoController extends ControllerBase {
    * Provide functionality that show client info.
    *
    * @param \Symfony\Component\HttpFoundation\Request $request
+   *   Request for getting browser for user.
    *
    * @return array
+   *   Array with all client information.
    * @dataProvider dataProvider
    * @covers ::transform
    */
@@ -24,13 +26,11 @@ class ShowInfoController extends ControllerBase {
     $host = $request->getHost();
     // Another methods to get client host.
     // $host = \Drupal::request()->getHost();
-    // $host = $_SERVER['HTTP_HOST'];
-
+    // $host = $_SERVER['HTTP_HOST'];.
     $ip = \Drupal::request()->getClientIp();
     // Another methods to get client ip.
-    // $ip = $_SERVER['REMOTE_ADDR'];
-
-    // Request via controller
+    // $ip = $_SERVER['REMOTE_ADDR'];.
+    // Request via controller.
     $controller_request_browser = $request->headers->get('User-Agent', '');
 
     // Another methods to get client browser.
