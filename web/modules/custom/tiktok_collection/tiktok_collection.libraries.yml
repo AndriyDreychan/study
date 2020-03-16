@@ -1,0 +1,6 @@
+tiktok_collection:
+  css:
+    theme:
+      css/tiktok_collection.css: {}
+  js:
+    js/tiktok_collection.js: {}

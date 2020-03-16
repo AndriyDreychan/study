@@ -15,12 +15,15 @@
         }
     ],
     "require": {
+        "ext-json": "*",
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
-        "drupal/twig_tweak": "^2.4"
+        "drupal/devel": "^2.1",
+        "drupal/twig_tweak": "^2.4",
+        "drupal/url_embed": "^1.0"
     },
     "require-dev": {
     },

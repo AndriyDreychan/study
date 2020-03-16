@@ -1,0 +1,5 @@
+name: 'TikTok collection'
+description: 'Module for collecting tiktok videos'
+core: 8.x
+package: Custom
+type: module

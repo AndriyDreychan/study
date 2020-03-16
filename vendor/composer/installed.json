@@ -1144,6 +1144,164 @@
         "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
     },
     {
+        "name": "drupal/devel",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/devel.git",
+            "reference": "8.x-2.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/devel-8.x-2.1.zip",
+            "reference": "8.x-2.1",
+            "shasum": "8f735892922aa5f228e681e645e5f02b1c008f14"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "symfony/var-dumper": "~2.7|^3|^4"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.1",
+                "datestamp": "1556799496",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Moshe Weitzman",
+                "homepage": "https://github.com/weitzman",
+                "email": "weitzman@tejasa.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Hans Salvisberg",
+                "homepage": "https://www.drupal.org/u/salvis",
+                "email": "drupal@salvisberg.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Luca Lusso",
+                "homepage": "https://www.drupal.org/u/lussoluca",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Marco (willzyx)",
+                "homepage": "https://www.drupal.org/u/willzyx",
+                "role": "Maintainer"
+            },
+            {
+                "name": "See contributors",
+                "homepage": "https://www.drupal.org/node/3236/committers"
+            },
+            {
+                "name": "pcambra",
+                "homepage": "https://www.drupal.org/user/122101"
+            },
+            {
+                "name": "salvis",
+                "homepage": "https://www.drupal.org/user/82964"
+            },
+            {
+                "name": "willzyx",
+                "homepage": "https://www.drupal.org/user/1043862"
+            }
+        ],
+        "description": "Various blocks, pages, and functions for developers.",
+        "homepage": "http://drupal.org/project/devel",
+        "support": {
+            "source": "http://cgit.drupalcode.org/devel",
+            "issues": "http://drupal.org/project/devel",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/embed",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/embed.git",
+            "reference": "8.x-1.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.3.zip",
+            "reference": "8.x-1.3",
+            "shasum": "141be860f2d2e1df67904995fa43774fee355328"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.3",
+                "datestamp": "1576704484",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "Devin Carlson",
+                "homepage": "https://www.drupal.org/user/290182"
+            },
+            {
+                "name": "Drupal Media Team",
+                "homepage": "https://www.drupal.org/user/3260690"
+            },
+            {
+                "name": "cs_shadow",
+                "homepage": "https://www.drupal.org/user/2828287"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            }
+        ],
+        "description": "Provide a framework for various different types of embeds in WYSIWYG editors, common functionality, interfaces, and standards.",
+        "homepage": "https://www.drupal.org/project/embed",
+        "support": {
+            "source": "https://git.drupalcode.org/project/embed",
+            "issues": "https://www.drupal.org/project/issues/embed",
+            "irc": "irc://irc.freenode.org/drupal-media"
+        }
+    },
+    {
         "name": "drupal/twig_tweak",
         "version": "2.4.0",
         "version_normalized": "2.4.0.0",
@@ -1198,6 +1356,75 @@
         "support": {
             "source": "https://git.drupalcode.org/project/twig_tweak",
             "issues": "https://www.drupal.org/project/issues/twig_tweak"
+        }
+    },
+    {
+        "name": "drupal/url_embed",
+        "version": "1.0.0-alpha1",
+        "version_normalized": "1.0.0.0-alpha1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/url_embed.git",
+            "reference": "8.x-1.0-alpha1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/url_embed-8.x-1.0-alpha1.zip",
+            "reference": "8.x-1.0-alpha1",
+            "shasum": "01a6b3ae79f315318d2b2ff7a37c76db95d3af0b"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/embed": "*",
+            "embed/embed": "~2.2"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha1",
+                "datestamp": "1483115583",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "Devin Carlson",
+                "homepage": "https://www.drupal.org/user/290182"
+            },
+            {
+                "name": "Drupal Media Team",
+                "homepage": "https://www.drupal.org/user/3260690"
+            },
+            {
+                "name": "cs_shadow",
+                "homepage": "https://www.drupal.org/user/2828287"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            }
+        ],
+        "description": "Allows embedding of URLs using the Drupal 8 WYSIWYG or link fields.",
+        "homepage": "https://www.drupal.org/project/url_embed",
+        "support": {
+            "source": "https://git.drupalcode.org/project/url_embed",
+            "issues": "https://www.drupal.org/project/issues/url_embed",
+            "irc": "irc://irc.freenode.org/drupal-media"
         }
     },
     {
@@ -1322,6 +1549,64 @@
             "emailvalidator",
             "validation",
             "validator"
+        ]
+    },
+    {
+        "name": "embed/embed",
+        "version": "v2.7.10",
+        "version_normalized": "2.7.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oscarotero/Embed.git",
+            "reference": "eb05178d6be2f63cd8116a955d02cabf326963a2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oscarotero/Embed/zipball/eb05178d6be2f63cd8116a955d02cabf326963a2",
+            "reference": "eb05178d6be2f63cd8116a955d02cabf326963a2",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-mbstring": "*",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^1.12",
+            "guzzlehttp/guzzle": "5.x",
+            "phpunit/phpunit": "*"
+        },
+        "suggest": {
+            "guzzlehttp/guzzle@5.x": "To use Guzzle5 request resolver"
+        },
+        "time": "2020-01-31T19:39:32+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Embed\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Oscar Otero",
+                "email": "oom@oscarotero.com",
+                "homepage": "http://oscarotero.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP library to retrieve page info using oembed, opengraph, etc",
+        "homepage": "https://github.com/oscarotero/Embed",
+        "keywords": [
+            "embed",
+            "embedly",
+            "oembed",
+            "opengraph",
+            "twitter cards"
         ]
     },
     {
@@ -2935,6 +3220,63 @@
         ]
     },
     {
+        "name": "symfony/polyfill-php72",
+        "version": "v1.14.0",
+        "version_normalized": "1.14.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-php72.git",
+            "reference": "46ecacf4751dd0dc81e4f6bf01dbf9da1dc1dadf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/46ecacf4751dd0dc81e4f6bf01dbf9da1dc1dadf",
+            "reference": "46ecacf4751dd0dc81e4f6bf01dbf9da1dc1dadf",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2020-01-13T11:15:53+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.14-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Php72\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
         "name": "symfony/polyfill-util",
         "version": "v1.12.0",
         "version_normalized": "1.12.0.0",
@@ -3422,6 +3764,84 @@
         ],
         "description": "Symfony Validator Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/var-dumper",
+        "version": "v4.4.5",
+        "version_normalized": "4.4.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "2572839911702b0405479410ea7a1334bfab0b96"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2572839911702b0405479410ea7a1334bfab0b96",
+            "reference": "2572839911702b0405479410ea7a1334bfab0b96",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-mbstring": "~1.0",
+            "symfony/polyfill-php72": "~1.5"
+        },
+        "conflict": {
+            "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
+            "symfony/console": "<3.4"
+        },
+        "require-dev": {
+            "ext-iconv": "*",
+            "symfony/console": "^3.4|^4.0|^5.0",
+            "symfony/process": "^4.4|^5.0",
+            "twig/twig": "^1.34|^2.4|^3.0"
+        },
+        "suggest": {
+            "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+            "ext-intl": "To show region name in time zone dump",
+            "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
+        },
+        "time": "2020-02-24T13:10:00+00:00",
+        "bin": [
+            "Resources/bin/var-dump-server"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Resources/functions/dump.php"
+            ],
+            "psr-4": {
+                "Symfony\\Component\\VarDumper\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony mechanism for exploring and dumping PHP variables",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "debug",
+            "dump"
+        ]
     },
     {
         "name": "symfony/yaml",

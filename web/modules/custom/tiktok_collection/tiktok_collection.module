@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function tiktok_collection_theme() {
+  return [
+    'tiktok_collection'=> [
+      'variables'=> [
+        'rows'=> NULL,
+      ],
+    ],
+  ];
+}
