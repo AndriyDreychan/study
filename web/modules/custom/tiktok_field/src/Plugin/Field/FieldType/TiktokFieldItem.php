@@ -9,7 +9,7 @@ use Drupal\Core\TypedData\DataDefinition;
 /**
  * {@inheritdoc}
  *
- * @FieldType( Small description.
+ * @FieldType(
  *   id = "tiktok_field",
  *   label = @Translation("TikTok field"),
  *   module = "tiktok_field",
